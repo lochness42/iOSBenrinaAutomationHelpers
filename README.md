@@ -1,0 +1,2 @@
+# iOSBenrinaAutomationHelpers
+iOS XCUIAutomation helpers
