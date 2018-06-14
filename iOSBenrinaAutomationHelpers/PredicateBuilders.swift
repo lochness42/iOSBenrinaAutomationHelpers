@@ -14,17 +14,20 @@ internal protocol PredicateConvertable {
 }
 
 public enum ElementAttribute {
+    case identifier
     case label
-    case text
+    case title
     case value
+    case placeholderValue
     case attribute(String)
 
     public var format: String {
         switch self {
-
+        case .identifier: return "identifier"
         case .label: return "label"
-        case .text: return "text"
+        case .title: return "title"
         case .value: return "value"
+        case .placeholderValue: return "placeholderValue"
         case .attribute(let customAttribute): return "\(customAttribute)"
         }
     }
@@ -134,7 +137,7 @@ extension Array where Element == ElementPredicate {
 }
 
 extension NSPredicate {
-    internal convenience init(elementPredicates: [ElementPredicate]) {
+    public convenience init(elementPredicates: [ElementPredicate]) {
         self.init(format: elementPredicates.format, argumentArray: elementPredicates.arguments)
     }
 

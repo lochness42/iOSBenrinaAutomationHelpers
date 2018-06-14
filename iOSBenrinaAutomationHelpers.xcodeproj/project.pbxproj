@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10AC479920D1B93A00B6CFF8 /* Waiters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AC479820D1B93A00B6CFF8 /* Waiters.swift */; };
+		EB75C7FB20D12CB8003F1980 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB75C7FA20D12CB8003F1980 /* XCTest.framework */; };
+		EB884B0D20D12E9200F14EC2 /* XCUIElement+Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB884B0C20D12E9100F14EC2 /* XCUIElement+Elements.swift */; };
 		EBC0E5D520CD827A00AE5CC1 /* iOSBenrinaAutomationHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC0E5CB20CD827A00AE5CC1 /* iOSBenrinaAutomationHelpers.framework */; };
 		EBC0E5DC20CD827A00AE5CC1 /* iOSBenrinaAutomationHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = EBC0E5CE20CD827A00AE5CC1 /* iOSBenrinaAutomationHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EBC0E5E620CD834600AE5CC1 /* PredicateBuilders.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0E5E520CD834600AE5CC1 /* PredicateBuilders.swift */; };
@@ -26,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10AC479820D1B93A00B6CFF8 /* Waiters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waiters.swift; sourceTree = "<group>"; };
+		EB75C7FA20D12CB8003F1980 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EB884B0C20D12E9100F14EC2 /* XCUIElement+Elements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Elements.swift"; sourceTree = "<group>"; };
 		EBC0E5CB20CD827A00AE5CC1 /* iOSBenrinaAutomationHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSBenrinaAutomationHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC0E5CE20CD827A00AE5CC1 /* iOSBenrinaAutomationHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSBenrinaAutomationHelpers.h; sourceTree = "<group>"; };
 		EBC0E5CF20CD827A00AE5CC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB75C7FB20D12CB8003F1980 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +63,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB884B0720D12C5400F14EC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB75C7FA20D12CB8003F1980 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EBC0E5C120CD827A00AE5CC1 = {
 			isa = PBXGroup;
 			children = (
 				EBC0E5CD20CD827A00AE5CC1 /* iOSBenrinaAutomationHelpers */,
 				EBC0E5D820CD827A00AE5CC1 /* iOSBenrinaAutomationHelpersTests */,
 				EBC0E5CC20CD827A00AE5CC1 /* Products */,
+				EB884B0720D12C5400F14EC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +93,11 @@
 		EBC0E5CD20CD827A00AE5CC1 /* iOSBenrinaAutomationHelpers */ = {
 			isa = PBXGroup;
 			children = (
+				EB884B0C20D12E9100F14EC2 /* XCUIElement+Elements.swift */,
 				EBC0E5CE20CD827A00AE5CC1 /* iOSBenrinaAutomationHelpers.h */,
 				EBC0E5CF20CD827A00AE5CC1 /* Info.plist */,
 				EBC0E5E520CD834600AE5CC1 /* PredicateBuilders.swift */,
+				10AC479820D1B93A00B6CFF8 /* Waiters.swift */,
 			);
 			path = iOSBenrinaAutomationHelpers;
 			sourceTree = "<group>";
@@ -204,6 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10AC479920D1B93A00B6CFF8 /* Waiters.swift in Sources */,
+				EB884B0D20D12E9200F14EC2 /* XCUIElement+Elements.swift in Sources */,
 				EBC0E5E620CD834600AE5CC1 /* PredicateBuilders.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +380,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				INFOPLIST_FILE = iOSBenrinaAutomationHelpers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -368,6 +390,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.balint-tsukahara.iOSBenrinaAutomationHelpers";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -388,6 +411,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				INFOPLIST_FILE = iOSBenrinaAutomationHelpers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -396,6 +421,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.balint-tsukahara.iOSBenrinaAutomationHelpers";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

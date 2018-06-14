@@ -10,6 +10,11 @@ import XCTest
 @testable import iOSBenrinaAutomationHelpers
 
 class ElementAttributesTests: XCTestCase {
+    // MARK: - identifier attribute test
+    func testIdentifierAttributeValue() {
+        XCTAssertEqual(ElementAttribute.identifier.format, "identifier")
+    }
+
     // MARK: - label attribute test
     func testLabelAttributeValue() {
         XCTAssertEqual(ElementAttribute.label.format, "label")
