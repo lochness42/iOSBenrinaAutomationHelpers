@@ -10,10 +10,8 @@
 extension Array where Element == ElementPredicate {
   internal var format: String {
     var formatString = ""
-    
     self.forEach { formatString += "\($0.format) " }
-    
-    return formatString.trimmingCharacters(in: CharacterSet(charactersIn: " "))
+    return formatString.trimmingCharacters(in: NSCharacterSet.whitespaces)
   }
   
   internal var arguments: [Any]? {
@@ -24,7 +22,6 @@ extension Array where Element == ElementPredicate {
         argumentList.append(contentsOf: argumentsInMatch)
       }
     }
-    
     return argumentList.count > 0 ? argumentList : nil
   }
 }
