@@ -11,16 +11,16 @@ import XCTest
 
 class NSPredicateForElementPredicatesTests: XCTestCase {
     class Element: NSObject {
-        let text: String
+        let identifier: String
         let value: String
         let attribute: String
         let exists: String
         let hittable: String
         let enabled: String
 
-        init(text: String = "", value: String = "", attribute: String = "",
+        init(identifier: String = "", value: String = "", attribute: String = "",
              exists: String = "1", hittable: String = "1", enabled: String = "1") {
-            self.text = text
+            self.identifier = identifier
             self.value = value
             self.attribute = attribute
             self.exists = exists
@@ -29,7 +29,7 @@ class NSPredicateForElementPredicatesTests: XCTestCase {
         }
 
         override var description: String {
-            return "text: \(text)\nvalue:\(value)\nattribute:\(attribute)\nexists:\(exists)\nenabled:\(enabled)\nhittable:\(hittable)"
+            return "identifier: \(identifier)\nvalue:\(value)\nattribute:\(attribute)\nexists:\(exists)\nenabled:\(enabled)\nhittable:\(hittable)"
         }
     }
 

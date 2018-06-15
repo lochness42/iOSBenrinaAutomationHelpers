@@ -8,12 +8,16 @@
 
 import Foundation
 
-internal protocol PredicateConvertable {
-    var format: String { get }
-    var arguments: [Any]? { get }
-}
-
 public enum ElementAttribute {
+    /**
+     Element attributes for building NSPredicates
+
+     - identifier: representing identifier or accessibilityIdentifier attribute of element
+     - label: representing label attribute of element
+     - title: representing title attribute of element
+     - value: representing value attribute of element
+     - attribute(String): can represent any attribute attribute of element defined by user
+     */
     case identifier
     case label
     case title
@@ -33,7 +37,7 @@ public enum ElementAttribute {
     }
 }
 
-public enum ElementPredicate: PredicateConvertable {
+public enum ElementPredicate {
     case and
     case or
 
@@ -112,6 +116,19 @@ public enum ElementPredicate: PredicateConvertable {
         case .isNotOneOfTheValues(_, let values): return values
         }
     }
+}
+
+// Some element predicates will result in failure if they are used for querying for XCUIElement or XCUIElementQuery
+// They can be used in waiter functions though
+func checkElementPredicates(_ predicates: [ElementPredicate]) -> Bool {
+  return predicates.contains(where: { elementPredicate in
+    switch elementPredicate {
+    case .exists, .doesNotExist, .isHittable, .isNotHittable:
+      return true
+    default:
+      return false
+    }
+  })
 }
 
 extension Array where Element == ElementPredicate {

@@ -21,8 +21,8 @@ class ElementAttributesTests: XCTestCase {
     }
 
     // MARK: - text attribute test
-    func testTextAttributeValue() {
-        XCTAssertEqual(ElementAttribute.text.format, "text")
+    func testTitleAttributeValue() {
+        XCTAssertEqual(ElementAttribute.title.format, "title")
     }
 
     // MARK: - value attribute test

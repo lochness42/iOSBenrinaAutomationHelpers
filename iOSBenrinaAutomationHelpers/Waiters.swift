@@ -8,12 +8,27 @@
 
 import XCTest
 
-public var xctWaiter: XCTWaiter = XCTWaiter()
+/**
+ Wait function that returns true/false depending whether element satisfied predicates within time limit
 
-public func customWait(forElement element: XCUIElement, to elementPredicates: [ElementPredicate], atMost timeout: TimeInterval = 2) -> Bool {
-  let predicate = NSPredicate(elementPredicates: elementPredicates)
-  let expectation = XCTestCase().expectation(for: predicate, evaluatedWith: element, handler: nil)
+ @param element that we're checking and array of predicates, timeout is optional
 
-  let result = xctWaiter.wait(for: [expectation], timeout: 5)
-  return result == .completed
+ @return boolean depending whether predicates got satisfied within time limit
+ */
+
+public func Wait(forElement element: XCUIElement, thatShould elementPredicates: [ElementPredicate], atMost timeout: TimeInterval = timeout, xctWaiter: XCTWaiter = XCTWaiter()) -> Bool {
+    return element.wait(until: elementPredicates, atMost: timeout, xctWaiter: xctWaiter)
+}
+
+/**
+ Wait function that fails depending whether element satisfied predicates within time limit
+ 
+ @param element that we're checking and array of predicates, timeout is optional
+ 
+ @return fails if predicates didn't get satisfied within time limit
+ */
+public func Wait(forElement element: XCUIElement, to elementPredicates: [ElementPredicate], atMost timeout: TimeInterval = timeout, xctWaiter: XCTWaiter = XCTWaiter(), file: StaticString = #file, line: UInt = #line) {
+  XCTAssertTrue(element.wait(until: elementPredicates, atMost: timeout, xctWaiter: xctWaiter),
+                "Waiting for element to fulfil \(NSPredicate(elementPredicates: elementPredicates).predicateFormat) within \(timeout)s failed for \(element.debugDescription)",
+                file: #file, line: #line)
 }
