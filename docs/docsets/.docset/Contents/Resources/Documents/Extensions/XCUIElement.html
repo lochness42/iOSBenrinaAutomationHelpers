@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>XCUIElement Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/XCUIElement" class="dashAnchor"></a>
+    <a title="XCUIElement Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (30% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        XCUIElement Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Global Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:27iOSBenrinaAutomationHelpers7timeoutSdvp">timeout</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DateMonthFormat.html">DateMonthFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DatePickerMode.html">DatePickerMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DatePickerWheelSetup.html">DatePickerWheelSetup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DayFormat.html">DayFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ElementAttribute.html">ElementAttribute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ElementPredicate.html">ElementPredicate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HoursFormat.html">HoursFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MinutesFormat.html">MinutesFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MonthFormat.html">MonthFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SecondsFormat.html">SecondsFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SwipeDirection.html">SwipeDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SwipeLength.html">SwipeLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ToggleSwitch.html">ToggleSwitch</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/YearsFormat.html">YearsFormat</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/NSPredicate.html">NSPredicate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/XCUIElement.html">XCUIElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/XCUIElementQuery.html">XCUIElementQuery</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>XCUIElement</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">XCUIElement</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">XCUIElementAttributes</span><span class="p">,</span> <span class="kt">XCUIElementTypeQueryProvider</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE8adjustTo4date0G10PickerMode6localey10Foundation4DateV_AC0lhI0OAH6LocaleVtF"></a>
+                    <a name="//apple_ref/swift/Method/adjustTo(date:datePickerMode:locale:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE8adjustTo4date0G10PickerMode6localey10Foundation4DateV_AC0lhI0OAH6LocaleVtF">adjustTo(date:datePickerMode:locale:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets datePicker wheels to chosen date/time
+Works only for datePicker objects</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Doesn&rsquo;t fail if element type isn&rsquo;t <strong>datePicker</strong>, but does nothing as a result
+## Usage Example: ##
+&ldquo;&rdquo;
+//Setup
+let locale = Locale(identifier: <q>en_GB</q>)
+
+</div>
+
+<p>let datePickerSetup = DatePickerMode.date([
+   DatePickerWheelSetup.year(YearsFormat.padded),
+   DatePickerWheelSetup.month(MonthFormat.numeric),
+   DatePickerWheelSetup.day(DayFormat.padded)
+])</p>
+
+<p>let tomorrow = Calendar.current.date(byAdding: .day, value: 1, to: Date())!</p>
+
+<p>let datePicker = XCUIApplication().datePickers.element(boundBy: 0)</p>
+
+<p>// Use
+datePicker.adjustTo(date: tomorrow, datePickerMode: datePickerSetup, locale: locale)</p>
+<pre class="highlight swift"><code>
+<span class="o">-</span> <span class="kt">Parameter</span> <span class="nv">date</span><span class="p">:</span> <span class="n">date</span> <span class="n">that</span> <span class="n">we</span> <span class="n">want</span> <span class="n">to</span> <span class="k">get</span> <span class="k">in</span> <span class="n">chosen</span> <span class="n">format</span><span class="o">.</span>
+<span class="o">-</span> <span class="kt">Parameter</span> <span class="nv">format</span><span class="p">:</span> <span class="n">chosen</span> <span class="n">date</span> <span class="n">format</span><span class="o">.</span>
+<span class="o">-</span> <span class="kt">Parameter</span> <span class="nv">locale</span><span class="p">:</span> <span class="n">locale</span> <span class="n">that</span> <span class="n">should</span> <span class="n">be</span> <span class="n">applied</span> <span class="n">to</span> <span class="n">the</span> <span class="n">formatted</span> <span class="n">date</span><span class="o">.</span>
+
+<span class="o">-</span> <span class="kt">Returns</span><span class="p">:</span> <span class="n">date</span> <span class="n">string</span> <span class="k">in</span> <span class="n">chosen</span> <span class="n">locale</span> <span class="n">and</span> <span class="n">format</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">adjustTo</span><span class="p">(</span><span class="n">date</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="nv">datePickerMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/DatePickerMode.html">DatePickerMode</a></span><span class="p">,</span> <span class="nv">locale</span><span class="p">:</span> <span class="kt">Locale</span> <span class="o">=</span> <span class="kt">Locale</span><span class="o">.</span><span class="n">current</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE11descendants6ofType5whichSo0A5QueryCSo0aG0V_SayAC16ElementPredicateOGtF"></a>
+                    <a name="//apple_ref/swift/Method/descendants(ofType:which:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE11descendants6ofType5whichSo0A5QueryCSo0aG0V_SayAC16ElementPredicateOGtF">descendants(ofType:which:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns descendants of element satisfying the element predicates for chosen element type</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Element predicates .exists, .doesNotExist, .isHittable and .isNotHittable are not allowed in this function
+
+</div>
+<h2 id='usage-example' class='heading'>Usage Example:</h2>
+<pre class="highlight swift"><code><span class="kt">XCUIApplication</span><span class="p">()</span><span class="o">.</span><span class="nf">descendants</span><span class="p">(</span><span class="nv">ofType</span><span class="p">:</span> <span class="o">.</span><span class="n">any</span><span class="p">,</span> <span class="nv">which</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">contains</span><span class="p">(</span><span class="o">.</span><span class="n">identifier</span><span class="p">,</span> <span class="s">"test"</span><span class="p">),</span> <span class="o">.</span><span class="n">and</span><span class="p">,</span> <span class="o">.</span><span class="nf">doesNotEndWith</span><span class="p">(</span><span class="o">.</span><span class="n">label</span><span class="p">,</span> <span class="s">"endsWith"</span><span class="p">)]</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">descendants</span><span class="p">(</span><span class="n">ofType</span> <span class="nv">elementType</span><span class="p">:</span> <span class="kt">ElementType</span><span class="p">,</span> <span class="n">which</span> <span class="nv">predicates</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/ElementPredicate.html">ElementPredicate</a></span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">XCUIElementQuery</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>elementType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>descendants&rsquo; element type</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>predicates</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>array of predicates [ElementPredicate] that descendants should fulfil.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>resulting XCUIElementQuery</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE8children6ofType5whichSo0A5QueryCSo0aG0V_SayAC16ElementPredicateOGtF"></a>
+                    <a name="//apple_ref/swift/Method/children(ofType:which:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE8children6ofType5whichSo0A5QueryCSo0aG0V_SayAC16ElementPredicateOGtF">children(ofType:which:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns children of element satisfying the element predicates for chosen element type</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Element predicates .exists, .doesNotExist, .isHittable and .isNotHittable are not allowed in this function
+
+</div>
+<h2 id='usage-example' class='heading'>Usage Example:</h2>
+<pre class="highlight swift"><code><span class="kt">XCUIApplication</span><span class="p">()</span><span class="o">.</span><span class="nf">children</span><span class="p">(</span><span class="nv">ofType</span><span class="p">:</span> <span class="o">.</span><span class="n">any</span><span class="p">,</span> <span class="nv">which</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">contains</span><span class="p">(</span><span class="o">.</span><span class="n">identifier</span><span class="p">,</span> <span class="s">"test"</span><span class="p">),</span> <span class="o">.</span><span class="n">and</span><span class="p">,</span> <span class="o">.</span><span class="nf">doesNotEndWith</span><span class="p">(</span><span class="o">.</span><span class="n">label</span><span class="p">,</span> <span class="s">"endsWith"</span><span class="p">)]</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">children</span><span class="p">(</span><span class="n">ofType</span> <span class="nv">elementType</span><span class="p">:</span> <span class="kt">ElementType</span><span class="p">,</span> <span class="n">which</span> <span class="nv">predicates</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/ElementPredicate.html">ElementPredicate</a></span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">XCUIElementQuery</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>elementType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>descendants&rsquo; element type</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>predicates</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>array of predicates [ElementPredicate] that descendants should fulfil</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>resulting XCUIElementQuery</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE4wait5until9atMostFor9xctWaiterSbSayAC16ElementPredicateOG_SdSo9XCTWaiterCtF"></a>
+                    <a name="//apple_ref/swift/Method/wait(until:atMostFor:xctWaiter:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE4wait5until9atMostFor9xctWaiterSbSayAC16ElementPredicateOG_SdSo9XCTWaiterCtF">wait(until:atMostFor:xctWaiter:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Waits for element to satisfy element predicates within time limit.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Doesn&rsquo;t fail if time limit has been exceeded, just returns False.
+## Usage Example: ##
+<code>
+XCUIApplication().wait(until: [.hittable, .or, .contains(.identifier, &quot;test&quot;), atMostFor: 2]
+</code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">wait</span><span class="p">(</span><span class="n">until</span> <span class="nv">elementPredicates</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/ElementPredicate.html">ElementPredicate</a></span><span class="p">],</span> <span class="n">atMostFor</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="o">=</span> <span class="n"><a href="../Global Variables.html#/s:27iOSBenrinaAutomationHelpers7timeoutSdvp">timeout</a></span><span class="p">,</span> <span class="nv">xctWaiter</span><span class="p">:</span> <span class="kt">XCTWaiter</span> <span class="o">=</span> <span class="kt">XCTWaiter</span><span class="p">())</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>elementPredicates</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>array of predicates that element should fulfil</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeout</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(optional)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>xctWaiter</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(for testing purposes)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>True if element predicates were satisfied witin time limit for chosen element</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE6toggleSbyF"></a>
+                    <a name="//apple_ref/swift/Method/toggle()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE6toggleSbyF">toggle()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Toggle action for <strong>switch</strong> elements only</p>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    <p>does nothing if <strong>XCUIElement</strong> is not of type <strong>Switch</strong></p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">toggle</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>True if element value changed after tapping on it</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Repeated%20swipe%20functions"></a>
+                <a name="//apple_ref/swift/Section/Repeated swipe functions" class="dashAnchor"></a>
+                <a href="#/Repeated%20swipe%20functions">
+                  <h3 class="section-name">Repeated swipe functions</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE9swipeDown7repeatsySi_tF"></a>
+                    <a name="//apple_ref/swift/Method/swipeDown(repeats:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE9swipeDown7repeatsySi_tF">swipeDown(repeats:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">swipeDown</span><span class="p">(</span><span class="n">repeats</span> <span class="nv">times</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE7swipeUp7repeatsySi_tF"></a>
+                    <a name="//apple_ref/swift/Method/swipeUp(repeats:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE7swipeUp7repeatsySi_tF">swipeUp(repeats:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">swipeUp</span><span class="p">(</span><span class="n">repeats</span> <span class="nv">times</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE9swipeLeft7repeatsySi_tF"></a>
+                    <a name="//apple_ref/swift/Method/swipeLeft(repeats:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE9swipeLeft7repeatsySi_tF">swipeLeft(repeats:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">swipeLeft</span><span class="p">(</span><span class="n">repeats</span> <span class="nv">times</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE10swipeRight7repeatsySi_tF"></a>
+                    <a name="//apple_ref/swift/Method/swipeRight(repeats:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE10swipeRight7repeatsySi_tF">swipeRight(repeats:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">swipeRight</span><span class="p">(</span><span class="n">repeats</span> <span class="nv">times</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE24swipeUntilAnotherElement15becomesHittable9direction6length14maximumRepeats9xctWaiterSbAB_AC14SwipeDirectionOAC0Q6LengthOSiSo9XCTWaiterCtF"></a>
+                    <a name="//apple_ref/swift/Method/swipeUntilAnotherElement(becomesHittable:direction:length:maximumRepeats:xctWaiter:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE24swipeUntilAnotherElement15becomesHittable9direction6length14maximumRepeats9xctWaiterSbAB_AC14SwipeDirectionOAC0Q6LengthOSiSo9XCTWaiterCtF">swipeUntilAnotherElement(becomesHittable:direction:length:maximumRepeats:xctWaiter:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Swipes on current element until referenced element becomes hittable</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Doesn&rsquo;t fail if time limit has been exceeded, just returns False.
+## Usage Example: ##
+<code>
+XCUIApplication().swipeUntilAnother(becomesHittable: XCUIApplication().button[&quot;testElement&quot;], direction: .up, length: .regular, maximumRepeats: 3)
+</code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">swipeUntilAnotherElement</span><span class="p">(</span><span class="n">becomesHittable</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">XCUIElement</span><span class="p">,</span> <span class="nv">direction</span><span class="p">:</span> <span class="kt"><a href="../Enums/SwipeDirection.html">SwipeDirection</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">up</span><span class="p">,</span> <span class="nv">length</span><span class="p">:</span> <span class="kt"><a href="../Enums/SwipeLength.html">SwipeLength</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">regular</span><span class="p">,</span> <span class="nv">maximumRepeats</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+                                     <span class="nv">xctWaiter</span><span class="p">:</span> <span class="kt">XCTWaiter</span> <span class="o">=</span> <span class="kt">XCTWaiter</span><span class="p">())</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>element</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>element that we expect to become hittable</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>direction</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>direction of the swipe</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>length</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>length of the swipe</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maximumRepeats</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>number of swipes attempted to get target element hittable</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>xctWaiter</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(for testing purposes)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>True if element became hittable after swiping</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE13clearAndEnter4textySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/clearAndEnter(text:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE13clearAndEnter4textySS_tF">clearAndEnter(text:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Clears text field if element type is <strong>textField</strong>, <strong>textView</strong> or <strong>secureTextField</strong> and then types in the chosen text.
+<em>Tries to tap on element if it&rsquo;s not selected yet.</em></p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Doesn&rsquo;t fail if element type isn&rsquo;t <strong>textField</strong>, <strong>textView</strong> or <strong>secureTextField</strong>, but does nothing as a result
+
+</div>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Does nothing if element already has chosen text as it&rsquo;s value
+## Usage Example: ##
+<code>
+XCUIApplication().textField.element.clearAndEnter(text: &quot;test&quot;)
+</code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">clearAndEnter</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-06-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

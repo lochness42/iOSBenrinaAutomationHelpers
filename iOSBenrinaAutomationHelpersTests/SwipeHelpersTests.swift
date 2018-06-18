@@ -10,6 +10,7 @@ import XCTest
 @testable import iOSBenrinaAutomationHelpers
 
 class SwipeHelpersTests: XCTestCase {
+  // MARK: - Swipe vector tests
   func testSwipeUpVector() {
     let vector = SwipeDirection.up.vector
     XCTAssertEqual(vector.x, 0.0)
@@ -34,6 +35,7 @@ class SwipeHelpersTests: XCTestCase {
     XCTAssertEqual(vector.y, 0.0)
   }
 
+  // MARK: - Swipe length tests
   func testShortSwipeLength() {
     XCTAssertEqual(SwipeLength.short.multiplier, 100)
   }
@@ -50,6 +52,7 @@ class SwipeHelpersTests: XCTestCase {
     XCTAssertEqual(SwipeLength.custom(42).multiplier, 42)
   }
 
+  // MARK: Noramalised vector calculation tests
   func testCalculateNormalisedVectorForSwipeLeft() {
     let direction = SwipeDirection .left
     let length = SwipeLength.regular

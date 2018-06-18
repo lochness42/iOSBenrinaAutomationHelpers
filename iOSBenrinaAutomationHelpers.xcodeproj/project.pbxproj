@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1031348620D55F1300BDE3E2 /* XCUIElement+DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1031348520D55F1300BDE3E2 /* XCUIElement+DatePicker.swift */; };
 		EB47B31920D3D194009CEA9E /* ElementPredicatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0E5E720CD836600AE5CC1 /* ElementPredicatesTests.swift */; };
 		EB47B31B20D3DD56009CEA9E /* HelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB47B31A20D3DD56009CEA9E /* HelpersTests.swift */; };
 		EB47B31D20D3DEEA009CEA9E /* SwipeHelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB47B31C20D3DEEA009CEA9E /* SwipeHelpersTests.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1031348520D55F1300BDE3E2 /* XCUIElement+DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElement+DatePicker.swift"; sourceTree = "<group>"; };
 		EB47B31A20D3DD56009CEA9E /* HelpersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpersTests.swift; sourceTree = "<group>"; };
 		EB47B31C20D3DEEA009CEA9E /* SwipeHelpersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeHelpersTests.swift; sourceTree = "<group>"; };
 		EB47B31E20D3DF18009CEA9E /* InteractionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionHelpers.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				EB9CD50820D25B8800A87E76 /* XCUIElementQuery+Elements.swift */,
 				EB9CD51420D3B82B00A87E76 /* Array+ElementPredicate.swift */,
 				EB9CD51620D3B9A100A87E76 /* NSPredicate+ElementPredicate.swift */,
+				1031348520D55F1300BDE3E2 /* XCUIElement+DatePicker.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB47B31F20D3DF18009CEA9E /* InteractionHelpers.swift in Sources */,
+				1031348620D55F1300BDE3E2 /* XCUIElement+DatePicker.swift in Sources */,
 				EB9CD51920D3C1A600A87E76 /* InteractionEnums.swift in Sources */,
 				EB884B0D20D12E9200F14EC2 /* XCUIElement+Elements.swift in Sources */,
 				EBC0E5E620CD834600AE5CC1 /* PredicateBuilders.swift in Sources */,

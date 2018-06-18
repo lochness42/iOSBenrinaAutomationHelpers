@@ -30,3 +30,24 @@ func calculateNormalisedVectorForSwipe(expectedLengthInPixels: SwipeLength, dire
 
   return CGVector(dx: xOffset, dy: yOffset)
 }
+
+/**
+ Returns formatted date in chosen locale
+ 
+ ## Usage Example: ##
+ ````
+ generateWheelValueForDateInFormatAndLocale(date: Date(), format: "MMM d", locale: Locale(identifier: "en_GB"))
+ ````
+ 
+ - Parameter date: date that we want to get in chosen format.
+ - Parameter format: chosen date format.
+ - Parameter locale: locale that should be applied to the formatted date.
+ 
+ - Returns: date string in chosen locale and format
+ */
+func generateWheelValueForDateInFormatAndLocale(date: Date, format: String, locale: Locale) -> String {
+  let dateFormatter = DateFormatter()
+  dateFormatter.locale = locale
+  dateFormatter.setLocalizedDateFormatFromTemplate(format)
+  return dateFormatter.string(from: date)
+}
