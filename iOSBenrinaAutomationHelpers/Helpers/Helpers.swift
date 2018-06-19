@@ -6,13 +6,24 @@
 //  Copyright © 2018 Pavel Balint. All rights reserved.
 //
 
-fileprivate var _timeout: TimeInterval = 2
+fileprivate var _defaultTimeout: TimeInterval = 2
 
-public var timeout: TimeInterval {
+public var defaultTimeout: TimeInterval {
   get {
-    return _timeout
+    return _defaultTimeout
   }
   set {
-    _timeout = newValue
+    _defaultTimeout = newValue
+  }
+}
+
+fileprivate var _defaultSwipeLength: SwipeLength = .regular
+
+public var defaultSwipeLength: SwipeLength {
+  get {
+    return _defaultSwipeLength
+  }
+  set {
+    _defaultSwipeLength = newValue
   }
 }

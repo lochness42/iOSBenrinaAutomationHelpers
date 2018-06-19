@@ -24,9 +24,16 @@ class HelpersTests: XCTestCase {
 
   // MARK: - Test for default timeout setter and getter
   func testCanGetAndSetDefaultTimeout() {
-    XCTAssertEqual(timeout, 2)
-    timeout = 5
-    XCTAssertEqual(timeout, 5)
+    XCTAssertEqual(defaultTimeout, 2)
+    defaultTimeout = 5
+    XCTAssertEqual(defaultTimeout, 5)
+  }
+
+  // MARK: - Test for default swipe length setter and getter
+  func testCanGetAndSetDefaultSwipeLength() {
+    XCTAssertEqual(defaultSwipeLength, SwipeLength.regular)
+    defaultSwipeLength = .custom(10)
+    XCTAssertEqual(defaultSwipeLength, SwipeLength.custom(10))
   }
 
   // MARK: - ToggleSwitch enum value tests

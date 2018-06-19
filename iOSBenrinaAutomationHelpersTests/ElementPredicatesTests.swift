@@ -91,6 +91,26 @@ class ElementPredicatesTests: XCTestCase {
     XCTAssertNil(isNotHittablePredicate.arguments)
   }
 
+  // MARK: - isSelected tests
+  func testIsSelectedPredicateFormat() {
+    let isSelectedPredicate = ElementPredicate.isSelected
+    XCTAssertEqual(isSelectedPredicate.format, "selected == true")
+  }
+  func testIsSelectedPredicateArguments() {
+    let isSelectedPredicate = ElementPredicate.isSelected
+    XCTAssertNil(isSelectedPredicate.arguments)
+  }
+
+  // MARK: - isNotSelected tests
+  func testIsNotSelectedPredicateFormat() {
+    let isNotSelectedPredicate = ElementPredicate.isNotSelected
+    XCTAssertEqual(isNotSelectedPredicate.format, "NOT selected == true")
+  }
+  func testIsNotSelectedPredicateArguments() {
+    let isNotSelectedPredicate = ElementPredicate.isNotSelected
+    XCTAssertNil(isNotSelectedPredicate.arguments)
+  }
+
   // MARK: - contains tests
   func testContainsPredicateFormat() {
     let containsPredicate = ElementPredicate.contains(.attribute("text"), "test")

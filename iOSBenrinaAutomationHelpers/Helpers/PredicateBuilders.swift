@@ -42,6 +42,8 @@ public enum ElementPredicate {
   case doesNotExist
   case isHittable
   case isNotHittable
+  case isSelected
+  case isNotSelected
 
   case contains(ElementAttribute, String)
   case doesNotContain(ElementAttribute, String)
@@ -67,6 +69,8 @@ public enum ElementPredicate {
     case .doesNotExist: return "NOT \(ElementPredicate.exists.format)"
     case .isHittable: return "hittable == true"
     case .isNotHittable: return "NOT \(ElementPredicate.isHittable.format)"
+    case .isSelected: return "selected == true"
+    case .isNotSelected: return "NOT \(ElementPredicate.isSelected.format)"
 
     case .contains(let attribute, _): return "\(attribute.format) CONTAINS[cd] %@"
     case .doesNotContain(let attribute, let notContainingString): return "NOT \(ElementPredicate.contains(attribute, notContainingString).format)"
@@ -95,6 +99,8 @@ public enum ElementPredicate {
     case .doesNotExist: return nil
     case .isHittable: return nil
     case .isNotHittable: return nil
+    case .isSelected: return nil
+    case .isNotSelected: return nil
 
     case .contains(_, let containingString): return [containingString]
     case .doesNotContain(_, let notContainingString): return [notContainingString]
@@ -115,7 +121,7 @@ public enum ElementPredicate {
 
 // MARK: - Helper for checking allowed ElementPredicates
 /**
- Some element predicates will result in failure if they are used for querying for **XCUIElement** or **XCUIElementQuery**
+ Some element predicates will result in failure if they are used for querying for **XCUIElement** or **XCUIElementQuery** due to not conforming to XCUIElementAttributes protocol
  They can be used in waiter functions though
  - Parameter predicates: array of predicates that has to be checked for presence of .exists, .doesNotExist, .isHittable or .isNotHittable
 */

@@ -34,7 +34,7 @@ public enum SwipeDirection {
   }
 }
 
-public enum SwipeLength {
+public enum SwipeLength: Equatable {
   /**
    100 pixels swipe length
    */

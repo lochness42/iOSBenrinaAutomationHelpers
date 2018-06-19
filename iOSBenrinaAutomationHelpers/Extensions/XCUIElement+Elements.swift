@@ -55,12 +55,12 @@ extension XCUIElement {
    XCUIApplication().wait(until: [.hittable, .or, .contains(.identifier, "test"), atMostFor: 2]
    ````
    - Parameter elementPredicates: array of predicates that element should fulfil
-   - Parameter timeout: (optional)
+   - Parameter timeout: (optional) default can be globally redefined by assigning chosen timeout value to **defaultTimeout**
    - Parameter xctWaiter: (for testing purposes)
 
    - Returns: True if element predicates were satisfied witin time limit for chosen element
    */
-  public func wait(until elementPredicates: [ElementPredicate], atMostFor timeout: TimeInterval = timeout, xctWaiter: XCTWaiter = XCTWaiter()) -> Bool {
+  public func wait(until elementPredicates: [ElementPredicate], atMostFor timeout: TimeInterval = defaultTimeout, xctWaiter: XCTWaiter = XCTWaiter()) -> Bool {
     let predicate = NSPredicate(elementPredicates: elementPredicates)
     return XCTContext.runActivity(named: "Checking for element fulfil predicate \"\(predicate.predicateFormat)\"\nwithin \(timeout)s\nfor \(self.description)") { _ -> Bool in
       let expectation = XCTNSPredicateExpectation(predicate: predicate, object: self)
@@ -119,13 +119,13 @@ extension XCUIElement {
    ````
    - Parameter element: element that we expect to become hittable
    - Parameter direction: direction of the swipe
-   - Parameter length: length of the swipe
+   - Parameter length: (optional) length of the swipe, default can globally redefined by assigning chosen option to **defaultSwipeLength**
    - Parameter maximumRepeats: number of swipes attempted to get target element hittable
    - Parameter xctWaiter: (for testing purposes)
 
    - Returns: True if element became hittable after swiping
    */
-  public func swipeUntilAnotherElement(becomesHittable element: XCUIElement, direction: SwipeDirection = .up, length: SwipeLength = .regular, maximumRepeats: Int = 3,
+  public func swipeUntilAnotherElement(becomesHittable element: XCUIElement, direction: SwipeDirection = .up, length: SwipeLength = defaultSwipeLength, maximumRepeats: Int = 3,
                                        xctWaiter: XCTWaiter = XCTWaiter()) -> Bool {
     return XCTContext.runActivity(named: "User swipes until element is hittable in \(direction) direction maximum of \(times)x with swipe length \(length) for hittable element \(element.description) on \(self.description)") {_ -> Bool in
       XCTAssert(self.exists)
