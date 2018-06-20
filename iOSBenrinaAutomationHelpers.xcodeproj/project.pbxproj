@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10AC479920D1B93A00B6CFF8 /* Waiters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AC479820D1B93A00B6CFF8 /* Waiters.swift */; };
+		1031348620D55F1300BDE3E2 /* XCUIElement+DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1031348520D55F1300BDE3E2 /* XCUIElement+DatePicker.swift */; };
+		EB47B31920D3D194009CEA9E /* ElementPredicatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0E5E720CD836600AE5CC1 /* ElementPredicatesTests.swift */; };
+		EB47B31B20D3DD56009CEA9E /* HelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB47B31A20D3DD56009CEA9E /* HelpersTests.swift */; };
+		EB47B31D20D3DEEA009CEA9E /* SwipeHelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB47B31C20D3DEEA009CEA9E /* SwipeHelpersTests.swift */; };
+		EB47B31F20D3DF18009CEA9E /* InteractionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB47B31E20D3DF18009CEA9E /* InteractionHelpers.swift */; };
 		EB75C7FB20D12CB8003F1980 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB75C7FA20D12CB8003F1980 /* XCTest.framework */; };
 		EB884B0D20D12E9200F14EC2 /* XCUIElement+Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB884B0C20D12E9100F14EC2 /* XCUIElement+Elements.swift */; };
 		EB9CD50920D25B8800A87E76 /* XCUIElementQuery+Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9CD50820D25B8800A87E76 /* XCUIElementQuery+Elements.swift */; };
+		EB9CD51120D3B7E200A87E76 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9CD51020D3B7E200A87E76 /* Helpers.swift */; };
+		EB9CD51520D3B82B00A87E76 /* Array+ElementPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9CD51420D3B82B00A87E76 /* Array+ElementPredicate.swift */; };
+		EB9CD51720D3B9A100A87E76 /* NSPredicate+ElementPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9CD51620D3B9A100A87E76 /* NSPredicate+ElementPredicate.swift */; };
+		EB9CD51920D3C1A600A87E76 /* InteractionEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9CD51820D3C1A600A87E76 /* InteractionEnums.swift */; };
 		EBC0E5D520CD827A00AE5CC1 /* iOSBenrinaAutomationHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC0E5CB20CD827A00AE5CC1 /* iOSBenrinaAutomationHelpers.framework */; };
 		EBC0E5DC20CD827A00AE5CC1 /* iOSBenrinaAutomationHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = EBC0E5CE20CD827A00AE5CC1 /* iOSBenrinaAutomationHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EBC0E5E620CD834600AE5CC1 /* PredicateBuilders.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0E5E520CD834600AE5CC1 /* PredicateBuilders.swift */; };
-		EBC0E5E820CD836600AE5CC1 /* ElementPredicatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0E5E720CD836600AE5CC1 /* ElementPredicatesTests.swift */; };
 		EBC0E5EA20CFE24900AE5CC1 /* ElementAttributesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0E5E920CFE24900AE5CC1 /* ElementAttributesTests.swift */; };
 		EBC0E5EC20D0010F00AE5CC1 /* NSPredicateForElementPredicatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0E5EB20D0010F00AE5CC1 /* NSPredicateForElementPredicatesTests.swift */; };
 /* End PBXBuildFile section */
@@ -30,10 +37,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10AC479820D1B93A00B6CFF8 /* Waiters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waiters.swift; sourceTree = "<group>"; };
+		1031348520D55F1300BDE3E2 /* XCUIElement+DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElement+DatePicker.swift"; sourceTree = "<group>"; };
+		EB47B31A20D3DD56009CEA9E /* HelpersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpersTests.swift; sourceTree = "<group>"; };
+		EB47B31C20D3DEEA009CEA9E /* SwipeHelpersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeHelpersTests.swift; sourceTree = "<group>"; };
+		EB47B31E20D3DF18009CEA9E /* InteractionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionHelpers.swift; sourceTree = "<group>"; };
 		EB75C7FA20D12CB8003F1980 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		EB884B0C20D12E9100F14EC2 /* XCUIElement+Elements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Elements.swift"; sourceTree = "<group>"; };
 		EB9CD50820D25B8800A87E76 /* XCUIElementQuery+Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElementQuery+Elements.swift"; sourceTree = "<group>"; };
+		EB9CD51020D3B7E200A87E76 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		EB9CD51420D3B82B00A87E76 /* Array+ElementPredicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+ElementPredicate.swift"; sourceTree = "<group>"; };
+		EB9CD51620D3B9A100A87E76 /* NSPredicate+ElementPredicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPredicate+ElementPredicate.swift"; sourceTree = "<group>"; };
+		EB9CD51820D3C1A600A87E76 /* InteractionEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionEnums.swift; sourceTree = "<group>"; };
 		EBC0E5CB20CD827A00AE5CC1 /* iOSBenrinaAutomationHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSBenrinaAutomationHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC0E5CE20CD827A00AE5CC1 /* iOSBenrinaAutomationHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSBenrinaAutomationHelpers.h; sourceTree = "<group>"; };
 		EBC0E5CF20CD827A00AE5CC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +87,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EB9CD51220D3B7EB00A87E76 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EB884B0C20D12E9100F14EC2 /* XCUIElement+Elements.swift */,
+				EB9CD50820D25B8800A87E76 /* XCUIElementQuery+Elements.swift */,
+				EB9CD51420D3B82B00A87E76 /* Array+ElementPredicate.swift */,
+				EB9CD51620D3B9A100A87E76 /* NSPredicate+ElementPredicate.swift */,
+				1031348520D55F1300BDE3E2 /* XCUIElement+DatePicker.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EB9CD51320D3B80100A87E76 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EBC0E5E520CD834600AE5CC1 /* PredicateBuilders.swift */,
+				EB9CD51020D3B7E200A87E76 /* Helpers.swift */,
+				EB9CD51820D3C1A600A87E76 /* InteractionEnums.swift */,
+				EB47B31E20D3DF18009CEA9E /* InteractionHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		EBC0E5C120CD827A00AE5CC1 = {
 			isa = PBXGroup;
 			children = (
@@ -95,12 +132,10 @@
 		EBC0E5CD20CD827A00AE5CC1 /* iOSBenrinaAutomationHelpers */ = {
 			isa = PBXGroup;
 			children = (
+				EB9CD51320D3B80100A87E76 /* Helpers */,
+				EB9CD51220D3B7EB00A87E76 /* Extensions */,
 				EBC0E5CE20CD827A00AE5CC1 /* iOSBenrinaAutomationHelpers.h */,
 				EBC0E5CF20CD827A00AE5CC1 /* Info.plist */,
-				EBC0E5E520CD834600AE5CC1 /* PredicateBuilders.swift */,
-				10AC479820D1B93A00B6CFF8 /* Waiters.swift */,
-				EB884B0C20D12E9100F14EC2 /* XCUIElement+Elements.swift */,
-				EB9CD50820D25B8800A87E76 /* XCUIElementQuery+Elements.swift */,
 			);
 			path = iOSBenrinaAutomationHelpers;
 			sourceTree = "<group>";
@@ -109,9 +144,11 @@
 			isa = PBXGroup;
 			children = (
 				EBC0E5DB20CD827A00AE5CC1 /* Info.plist */,
-				EBC0E5E720CD836600AE5CC1 /* ElementPredicatesTests.swift */,
 				EBC0E5E920CFE24900AE5CC1 /* ElementAttributesTests.swift */,
+				EBC0E5E720CD836600AE5CC1 /* ElementPredicatesTests.swift */,
 				EBC0E5EB20D0010F00AE5CC1 /* NSPredicateForElementPredicatesTests.swift */,
+				EB47B31A20D3DD56009CEA9E /* HelpersTests.swift */,
+				EB47B31C20D3DEEA009CEA9E /* SwipeHelpersTests.swift */,
 			);
 			path = iOSBenrinaAutomationHelpersTests;
 			sourceTree = "<group>";
@@ -225,9 +262,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10AC479920D1B93A00B6CFF8 /* Waiters.swift in Sources */,
+				EB47B31F20D3DF18009CEA9E /* InteractionHelpers.swift in Sources */,
+				1031348620D55F1300BDE3E2 /* XCUIElement+DatePicker.swift in Sources */,
+				EB9CD51920D3C1A600A87E76 /* InteractionEnums.swift in Sources */,
 				EB884B0D20D12E9200F14EC2 /* XCUIElement+Elements.swift in Sources */,
 				EBC0E5E620CD834600AE5CC1 /* PredicateBuilders.swift in Sources */,
+				EB9CD51720D3B9A100A87E76 /* NSPredicate+ElementPredicate.swift in Sources */,
+				EB9CD51120D3B7E200A87E76 /* Helpers.swift in Sources */,
+				EB9CD51520D3B82B00A87E76 /* Array+ElementPredicate.swift in Sources */,
 				EB9CD50920D25B8800A87E76 /* XCUIElementQuery+Elements.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,9 +278,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB47B31D20D3DEEA009CEA9E /* SwipeHelpersTests.swift in Sources */,
 				EBC0E5EC20D0010F00AE5CC1 /* NSPredicateForElementPredicatesTests.swift in Sources */,
-				EBC0E5E820CD836600AE5CC1 /* ElementPredicatesTests.swift in Sources */,
+				EB47B31920D3D194009CEA9E /* ElementPredicatesTests.swift in Sources */,
 				EBC0E5EA20CFE24900AE5CC1 /* ElementAttributesTests.swift in Sources */,
+				EB47B31B20D3DD56009CEA9E /* HelpersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

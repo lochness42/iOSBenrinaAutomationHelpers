@@ -10,28 +10,33 @@ import XCTest
 @testable import iOSBenrinaAutomationHelpers
 
 class ElementAttributesTests: XCTestCase {
-    // MARK: - identifier attribute test
-    func testIdentifierAttributeValue() {
-        XCTAssertEqual(ElementAttribute.identifier.format, "identifier")
-    }
+  // MARK: - identifier attribute test
+  func testIdentifierAttributeValue() {
+    XCTAssertEqual(ElementAttribute.identifier.format, "identifier")
+  }
 
-    // MARK: - label attribute test
-    func testLabelAttributeValue() {
-        XCTAssertEqual(ElementAttribute.label.format, "label")
-    }
+  // MARK: - label attribute test
+  func testLabelAttributeValue() {
+    XCTAssertEqual(ElementAttribute.label.format, "label")
+  }
 
-    // MARK: - text attribute test
-    func testTitleAttributeValue() {
-        XCTAssertEqual(ElementAttribute.title.format, "title")
-    }
+  // MARK: - text attribute test
+  func testTextAttributeValue() {
+    XCTAssertEqual(ElementAttribute.title.format, "title")
+  }
 
-    // MARK: - value attribute test
-    func testValueAttributeValue() {
-        XCTAssertEqual(ElementAttribute.value.format, "value")
-    }
+  // MARK: - value attribute test
+  func testValueAttributeValue() {
+    XCTAssertEqual(ElementAttribute.value.format, "value")
+  }
 
-    // MARK: - custom attribute test
-    func testCustomAttributeValue() {
-        XCTAssertEqual(ElementAttribute.attribute("test").format, "test")
-    }
+  // MARK: - placeholderValue attribute test
+  func testPlaceholderValueAttributeValue() {
+    XCTAssertEqual(ElementAttribute.placeholderValue.format, "placeholderValue")
+  }
+
+  // MARK: - custom attribute test
+  func testCustomAttributeValue() {
+    XCTAssertEqual(ElementAttribute.attribute("test").format, "test")
+  }
 }

@@ -1,0 +1,544 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Extensions/NSPredicate+ElementPredicate.swift",
+      "line": 10,
+      "symbol": "NSPredicate.init(elementPredicates:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Extensions/XCUIElement+Elements.swift",
+      "line": 89,
+      "symbol": "XCUIElement.swipeDown(repeats:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Extensions/XCUIElement+Elements.swift",
+      "line": 95,
+      "symbol": "XCUIElement.swipeUp(repeats:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Extensions/XCUIElement+Elements.swift",
+      "line": 101,
+      "symbol": "XCUIElement.swipeLeft(repeats:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Extensions/XCUIElement+Elements.swift",
+      "line": 107,
+      "symbol": "XCUIElement.swipeRight(repeats:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/Helpers.swift",
+      "line": 11,
+      "symbol": "timeout",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 9,
+      "symbol": "SwipeDirection",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 37,
+      "symbol": "SwipeLength",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 66,
+      "symbol": "ToggleSwitch",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 67,
+      "symbol": "ToggleSwitch.on",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 68,
+      "symbol": "ToggleSwitch.off",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 71,
+      "symbol": "DatePickerMode",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 85,
+      "symbol": "DatePickerMode.time(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 86,
+      "symbol": "DatePickerMode.date(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 87,
+      "symbol": "DatePickerMode.dateAndTime(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 107,
+      "symbol": "DatePickerWheelSetup",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 131,
+      "symbol": "DatePickerWheelSetup.year(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 132,
+      "symbol": "DatePickerWheelSetup.month(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 133,
+      "symbol": "DatePickerWheelSetup.day(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 134,
+      "symbol": "DatePickerWheelSetup.hours(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 135,
+      "symbol": "DatePickerWheelSetup.minutes(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 136,
+      "symbol": "DatePickerWheelSetup.seconds(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 137,
+      "symbol": "DatePickerWheelSetup.amPm",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 138,
+      "symbol": "DatePickerWheelSetup.dateMonth(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 162,
+      "symbol": "DateMonthFormat",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 186,
+      "symbol": "YearsFormat",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 187,
+      "symbol": "YearsFormat.padded",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 188,
+      "symbol": "YearsFormat.nonPadded",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 189,
+      "symbol": "YearsFormat.twoDigit",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 192,
+      "symbol": "MonthFormat",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 193,
+      "symbol": "MonthFormat.numeric",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 194,
+      "symbol": "MonthFormat.numericPadded",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 195,
+      "symbol": "MonthFormat.shortHandName",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 196,
+      "symbol": "MonthFormat.fullName",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 197,
+      "symbol": "MonthFormat.narrowName",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 200,
+      "symbol": "DayFormat",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 201,
+      "symbol": "DayFormat.padded",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 202,
+      "symbol": "DayFormat.nonPadded",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 203,
+      "symbol": "DayFormat.shortDayOfWeek",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 204,
+      "symbol": "DayFormat.fullNameDayOfWeek",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 205,
+      "symbol": "DayFormat.narrowNameDayOfWeek",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 208,
+      "symbol": "HoursFormat",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 209,
+      "symbol": "HoursFormat.padded24Hours",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 210,
+      "symbol": "HoursFormat.padded12Hours",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 211,
+      "symbol": "HoursFormat.nonPadded24Hours",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 212,
+      "symbol": "HoursFormat.nonPadded12Hours",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 215,
+      "symbol": "MinutesFormat",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 216,
+      "symbol": "MinutesFormat.padded",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 217,
+      "symbol": "MinutesFormat.nonPadded",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 220,
+      "symbol": "SecondsFormat",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 221,
+      "symbol": "SecondsFormat.padded",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/InteractionEnums.swift",
+      "line": 222,
+      "symbol": "SecondsFormat.nonPadded",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 9,
+      "symbol": "ElementAttribute",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 23,
+      "symbol": "ElementAttribute.format",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 35,
+      "symbol": "ElementPredicate",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 36,
+      "symbol": "ElementPredicate.and",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 37,
+      "symbol": "ElementPredicate.or",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 39,
+      "symbol": "ElementPredicate.isEnabled",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 40,
+      "symbol": "ElementPredicate.isDisabled",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 41,
+      "symbol": "ElementPredicate.exists",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 42,
+      "symbol": "ElementPredicate.doesNotExist",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 43,
+      "symbol": "ElementPredicate.isHittable",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 44,
+      "symbol": "ElementPredicate.isNotHittable",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 46,
+      "symbol": "ElementPredicate.contains(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 47,
+      "symbol": "ElementPredicate.doesNotContain(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 48,
+      "symbol": "ElementPredicate.equals(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 49,
+      "symbol": "ElementPredicate.doesNotEqual(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 50,
+      "symbol": "ElementPredicate.beginsWith(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 51,
+      "symbol": "ElementPredicate.doesNotBeginWith(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 52,
+      "symbol": "ElementPredicate.endsWith(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 53,
+      "symbol": "ElementPredicate.doesNotEndWith(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 54,
+      "symbol": "ElementPredicate.matchesWithRegex(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 55,
+      "symbol": "ElementPredicate.doesNotMatchWithRegex(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 56,
+      "symbol": "ElementPredicate.isOneOfTheValues(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 57,
+      "symbol": "ElementPredicate.isNotOneOfTheValues(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 59,
+      "symbol": "ElementPredicate.format",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers/iOSBenrinaAutomationHelpers/Helpers/PredicateBuilders.swift",
+      "line": 87,
+      "symbol": "ElementPredicate.arguments",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/lochness42/GIT/bitbucket/iosbenrinaautomationhelpers"
+}
