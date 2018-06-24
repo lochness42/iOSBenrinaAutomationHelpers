@@ -6,7 +6,7 @@
 //  Copyright © 2018 Pavel Balint. All rights reserved.
 //
 
-public enum ElementAttribute {
+public enum ElementAttribute: Equatable {
   /** representing identifier or accessibilityIdentifier attribute of element */
   case identifier
   /** representing label attribute of element */
