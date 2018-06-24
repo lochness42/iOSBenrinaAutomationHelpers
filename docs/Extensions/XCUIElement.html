@@ -14,7 +14,7 @@
     <a title="XCUIElement Extension Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (30% documented)</p>
+        <p><a href="../index.html"> Docs</a> (29% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -31,7 +31,10 @@
             <a href="../Global Variables.html">Global Variables</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Global Variables.html#/s:27iOSBenrinaAutomationHelpers7timeoutSdvp">timeout</a>
+                <a href="../Global Variables.html#/s:27iOSBenrinaAutomationHelpers18defaultSwipeLengthAA0eF0Ovp">defaultSwipeLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:27iOSBenrinaAutomationHelpers14defaultTimeoutSdvp">defaultTimeout</a>
               </li>
             </ul>
           </li>
@@ -343,7 +346,7 @@ XCUIApplication().wait(until: [.hittable, .or, .contains(.identifier, &quot;test
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">wait</span><span class="p">(</span><span class="n">until</span> <span class="nv">elementPredicates</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/ElementPredicate.html">ElementPredicate</a></span><span class="p">],</span> <span class="n">atMostFor</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="o">=</span> <span class="n"><a href="../Global Variables.html#/s:27iOSBenrinaAutomationHelpers7timeoutSdvp">timeout</a></span><span class="p">,</span> <span class="nv">xctWaiter</span><span class="p">:</span> <span class="kt">XCTWaiter</span> <span class="o">=</span> <span class="kt">XCTWaiter</span><span class="p">())</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">wait</span><span class="p">(</span><span class="n">until</span> <span class="nv">elementPredicates</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/ElementPredicate.html">ElementPredicate</a></span><span class="p">],</span> <span class="n">atMostFor</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="o">=</span> <span class="n"><a href="../Global Variables.html#/s:27iOSBenrinaAutomationHelpers14defaultTimeoutSdvp">defaultTimeout</a></span><span class="p">,</span> <span class="nv">xctWaiter</span><span class="p">:</span> <span class="kt">XCTWaiter</span> <span class="o">=</span> <span class="kt">XCTWaiter</span><span class="p">())</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -371,7 +374,7 @@ XCUIApplication().wait(until: [.hittable, .or, .contains(.identifier, &quot;test
                               </td>
                               <td>
                                 <div>
-                                  <p>(optional)</p>
+                                  <p>(optional) default can be globally redefined by assigning chosen timeout value to <strong>defaultTimeout</strong></p>
                                 </div>
                               </td>
                             </tr>
@@ -429,6 +432,43 @@ XCUIApplication().wait(until: [.hittable, .or, .contains(.identifier, &quot;test
                       <div>
                         <h4>Return Value</h4>
                         <p>True if element value changed after tapping on it</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE11setSwitchToyS2bF"></a>
+                    <a name="//apple_ref/swift/Method/setSwitchTo(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So11XCUIElementC27iOSBenrinaAutomationHelpersE11setSwitchToyS2bF">setSwitchTo(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set switch value action for <strong>switch</strong> elements only.
+Does nothing if switch is already having correct value.</p>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    <p>does nothing if <strong>XCUIElement</strong> is not of type <strong>Switch</strong></p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setSwitchTo</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>True if switch is correctly set</p>
                       </div>
                     </section>
                   </div>
@@ -581,7 +621,7 @@ XCUIApplication().swipeUntilAnother(becomesHittable: XCUIApplication().button[&q
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">swipeUntilAnotherElement</span><span class="p">(</span><span class="n">becomesHittable</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">XCUIElement</span><span class="p">,</span> <span class="nv">direction</span><span class="p">:</span> <span class="kt"><a href="../Enums/SwipeDirection.html">SwipeDirection</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">up</span><span class="p">,</span> <span class="nv">length</span><span class="p">:</span> <span class="kt"><a href="../Enums/SwipeLength.html">SwipeLength</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">regular</span><span class="p">,</span> <span class="nv">maximumRepeats</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">swipeUntilAnotherElement</span><span class="p">(</span><span class="n">becomesHittable</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">XCUIElement</span><span class="p">,</span> <span class="nv">direction</span><span class="p">:</span> <span class="kt"><a href="../Enums/SwipeDirection.html">SwipeDirection</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">up</span><span class="p">,</span> <span class="nv">length</span><span class="p">:</span> <span class="kt"><a href="../Enums/SwipeLength.html">SwipeLength</a></span> <span class="o">=</span> <span class="n"><a href="../Global Variables.html#/s:27iOSBenrinaAutomationHelpers18defaultSwipeLengthAA0eF0Ovp">defaultSwipeLength</a></span><span class="p">,</span> <span class="nv">maximumRepeats</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
                                      <span class="nv">xctWaiter</span><span class="p">:</span> <span class="kt">XCTWaiter</span> <span class="o">=</span> <span class="kt">XCTWaiter</span><span class="p">())</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
@@ -622,7 +662,7 @@ XCUIApplication().swipeUntilAnother(becomesHittable: XCUIApplication().button[&q
                               </td>
                               <td>
                                 <div>
-                                  <p>length of the swipe</p>
+                                  <p>(optional) length of the swipe, default can globally redefined by assigning chosen option to <strong>defaultSwipeLength</strong></p>
                                 </div>
                               </td>
                             </tr>
@@ -707,7 +747,7 @@ XCUIApplication().textField.element.clearAndEnter(text: &quot;test&quot;)
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-06-18)</p>
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-06-24)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

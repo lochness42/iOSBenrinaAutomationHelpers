@@ -85,6 +85,25 @@ extension XCUIElement {
     }
   }
 
+  /**
+   Set switch value action for **switch** elements only.
+   Does nothing if switch is already having correct value.
+   - Remark: does nothing if **XCUIElement** is not of type **Switch**
+
+   - Returns: True if switch is correctly set
+   */
+  public func setSwitchTo(_ value: Bool) -> Bool {
+    if self.elementType == .switch {
+      let currentlyOn = ((self.value as! String) == "0")
+      if currentlyOn != value {
+        return self.toggle()
+      }
+      return true
+    }
+    return false
+  }
+
+
   // MARK: - Repeated swipe functions
   public func swipeDown(repeats times: Int = 2) {
     for _ in 0 ..< times {
